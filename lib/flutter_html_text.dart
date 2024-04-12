@@ -26,7 +26,7 @@ class HtmlText extends StatelessWidget {
     try {
       await cTab.launch(
         url,
-        option: new cTab.CustomTabsOption(
+        customTabsOption: new cTab.CustomTabsOption(
           toolbarColor: Theme.of(ctx).primaryColor,
           enableDefaultShare: true,
           enableUrlBarHiding: true,
@@ -40,8 +40,9 @@ class HtmlText extends StatelessWidget {
   }
 
   void _launchOtherURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    final Uri uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri);
     } else {
       print('Could not launch $url');
 
