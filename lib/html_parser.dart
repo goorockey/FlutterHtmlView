@@ -9,10 +9,10 @@ import 'package:html/parser.dart' show parse;
 import 'package:video_player/video_player.dart';
 
 class HtmlParser {
-  TextOverflow overflow;
-  int maxLines;
-  String baseUrl;
-  Function onLaunchFail;
+  TextOverflow? overflow;
+  int? maxLines;
+  String? baseUrl;
+  Function? onLaunchFail;
 
   HtmlParser({this.baseUrl, this.onLaunchFail, this.overflow, this.maxLines});
 

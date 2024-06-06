@@ -7,14 +7,13 @@ homepage: https://github.com/PonnamKarthik/FlutterHtmlView
 dependencies:
   flutter:
     sdk: flutter
-  flutter_custom_tabs: ^0.6.0
-  html: ^0.14.0
-  video_player: ^0.10.1+4
-  cached_network_image: ^2.0.0-rc
+  flutter_custom_tabs: ^1.0.4
+  html: ^0.15.1
+  video_player: ^2.0.0-nullsafety.9
+  cached_network_image: ^3.2.0
 
-  flutter_markdown: ^0.2.0
-  html2md: ^0.3.0
+  flutter_markdown: ^0.6.10
+  html2md: ^1.3.2
 
 environment:
-  sdk: ">=2.0.0-dev.28.0 <3.0.0"
-  flutter: ">=0.1.4 <2.0.0"
+  sdk: ">=2.12.0 <3.0.0"
